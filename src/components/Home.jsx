@@ -1,10 +1,11 @@
 import React from "react";
 import Popular from "./Popular";
+import Veggies from "./Veggies";
 
 const Home = () => {
   return (
     <div>
-      <a href="/">
+      {/* <a href="/">
         <img
           style={{
             display: "flex",
@@ -16,7 +17,8 @@ const Home = () => {
           alt=""
         />
       </a>
-      <input type="text" placeholder="Search Food" />
+      <input type="text" placeholder="Search Food" /> */}
+      <Veggies />
       <Popular />
     </div>
   );

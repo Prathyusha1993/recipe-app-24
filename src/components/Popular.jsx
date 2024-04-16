@@ -29,7 +29,7 @@ function Popular() {
       setGetPopularRecipe(data.recipes);
       console.log(data.recipes);
     }
-    // `https://api.spoonacular.com/recipes/random?$apiKey=${process.env.REACT_APP_API_KEY}&number=9`
+    // `https://api.spoonacular.com/recipes/random?apiKey=${process.env.REACT_APP_API_KEY}&number=9`
   };
 
   return (
