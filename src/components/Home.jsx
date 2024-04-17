@@ -1,26 +1,19 @@
 import React from "react";
 import Popular from "./Popular";
 import Veggies from "./Veggies";
+import { motion } from "framer-motion";
 
 const Home = () => {
   return (
-    <div>
-      {/* <a href="/">
-        <img
-          style={{
-            display: "flex",
-            objectFit: "contain",
-            width: "100px",
-            height: "50px",
-          }}
-          src="images/deliciousLogo.jpg"
-          alt=""
-        />
-      </a>
-      <input type="text" placeholder="Search Food" /> */}
+    <motion.div
+      animate={{ opacity: 1 }}
+      initial={{ opacity: 0 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.5 }}
+    >
       <Veggies />
       <Popular />
-    </div>
+    </motion.div>
   );
 };
 
